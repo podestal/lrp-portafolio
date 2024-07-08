@@ -1,11 +1,17 @@
+import Hero from "../components/landing/Hero"
+import Skills from "../components/landing/Skills"
+import About from "../components/landing/About"
+import Developer from "../components/landing/Developer"
+import Contact from "../components/landing/Contact"
+
 const MainPage = () => {
   return (
     <div>
-        <p>Hero</p>
-        <p>Skills (Design, Engineering)</p>
-        <p>About my experience</p>
-        <p>I wirte | I build</p>
-        <p>Contact</p>
+        <Hero />
+        <Skills />
+        <About />
+        <Developer />
+        <Contact />
     </div>
   )
 }

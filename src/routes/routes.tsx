@@ -2,6 +2,9 @@ import { createBrowserRouter } from "react-router-dom"
 import Layout from "../pages/Layout"
 import ErrorPage from "../pages/ErrorPage"
 import MainPage from "../pages/MainPage"
+import Curriculum from "../pages/Curriculum"
+import Experience from "../pages/Experience"
+import Proyectos from "../pages/Proyectos"
 
 const router = createBrowserRouter([
     {   
@@ -10,9 +13,9 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
         children: [
             { index: true, element: <MainPage /> },
-            // { path: 'islas', element: <IslasPage /> },
-            // { path: 'bosque', element: <BosquePage /> },
-            // { path: 'caleta', element: <CaletaPage /> },
+            { path: 'resume', element: <Curriculum /> },
+            { path: 'experience', element: <Experience /> },
+            { path: 'projects', element: <Proyectos /> },
         ]
     }
 ])
