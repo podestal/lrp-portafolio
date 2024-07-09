@@ -7,9 +7,15 @@ import Contact from "../components/landing/Contact"
 const MainPage = () => {
   return (
     <div>
-        <Hero />
-        <Skills />
-        <About />
+        <div className="h-200vh relative">
+            <div className="sticky top-0">
+                <Hero />
+            </div>
+            <div className="relative min-h-screen bg-slate-950">
+                <About />
+                <Skills />
+            </div>
+        </div>
         <Developer />
         <Contact />
     </div>

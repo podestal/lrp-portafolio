@@ -9,7 +9,7 @@ const NavBar = () => {
     const [show, setShow] = useState(false)
 
   return (
-    <header className="w-full fixed top-0">
+    <header className="w-full fixed top-0 z-10">
         <nav className="lg:max-w-[1280px] md:max-w-[1024px] mx-auto flex justify-between items-start">
             <Link to='/'><p className="max-lg:hidden py-4 cursor-pointer">LRP</p></Link>
             <AnimatePresence>
