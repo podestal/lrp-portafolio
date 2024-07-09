@@ -14,10 +14,10 @@ const Developer = () => {
             initial={{opacity: 0, translateX: -100}}
             whileInView={{opacity: 1, translateX: 0}}
             transition={{duration: 1.2}}
-            className="text-center text-5xl lg:text-8xl">{data.title}</motion.h2>
+            className="text-center text-6xl lg:text-8xl">{data.title}</motion.h2>
         <motion.div 
         
-        className="w-[80%] flex max-lg:flex-col justify-center items-center">
+        className="w-[80%] lg:h-[100vh] flex max-lg:flex-col justify-center items-center">
             <motion.div 
                 initial={{opacity: 0, translateX: -100}}
                 whileInView={{opacity: 1, translateX: 0}}
@@ -30,7 +30,7 @@ const Developer = () => {
                 initial={{opacity: 0, translateX: 100}}
                 whileInView={{opacity: 1, translateX: 0}}
                 transition={{duration: 1.2}}
-                className="rounded-[100px] border-solid border-sky-400 border-b-[1px] shadow-2xl w-[80%] h-[320px] mt-[100px] self-end lg:h-[500px] lg:m-6 flex flex-col justify-center items-center gap-12">
+                className="rounded-[100px] border-solid border-sky-400 border-b-[1px] w-[80%] h-[320px] mt-[100px] self-end lg:h-[500px] lg:m-6 flex flex-col justify-center items-center gap-12">
                 <h3 className="text-4xl lg:text-6xl">{data.experience}</h3>
                 <Button color="blue">{data.buttonText}</Button>
             </motion.div>

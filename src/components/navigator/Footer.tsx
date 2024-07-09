@@ -1,6 +1,41 @@
+import { RiGithubFill, RiLinkedinFill, RiTwitterXFill, RiWhatsappLine } from "@remixicon/react"
+import { Icon } from "@tremor/react"
+import { Link } from "react-router-dom"
+import logo from '../../assets/imgs/logo-no-background.png'
+import { navData } from "../../data/landing"
+import useLanguageStore from "../../store/store"
+import { contactData } from "../../data/landing"
+
 const Footer = () => {
+
+    const lan = useLanguageStore(s => s.lan)
+    const data = lan === 'ES' ? contactData['ES'] : contactData['EN']
+
   return (
-    <div>Footer</div>
+    <div className="w-full min-h-[160px] bg-black py-10">
+        <div className="h-full grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div className="w-full h-full flex flex-col justify-center items-center gap-2">
+                <Link to='/'><img className="py-4 cursor-pointer w-[80px]" src={logo} alt="" /></Link>
+                <div className="flex gap-4">
+                    <a href="#" target="_blank"><Icon icon={RiGithubFill}/></a>
+                    <a href="#" target="_blank"><Icon icon={RiLinkedinFill}/></a>
+                    <a href="#" target="_blank"><Icon icon={RiTwitterXFill}/></a>
+                    <a href="#" target="_blank"><Icon icon={RiWhatsappLine}/></a>
+                </div>
+            </div>
+            <div className="w-full h-full flex flex-col justify-center items-center gap-2">
+                <ul>
+                {navData.map( nav => (
+                    <li className="hover:text-slate-50 text-slate-400 lg:text-xl text-center lg:text-left mt-2"><Link to={nav.route}>{lan == 'ES' ? nav.titleEs : nav.titleEn}</Link></li>
+                ))}
+                </ul>
+            </div>
+            <div className="w-full h-full flex flex-col justify-center items-center gap-2">
+                <h3 className="text-slate-400">{data.title}</h3>
+                <p className="text-2xl">l.r.p.2991@gmail.com</p>
+            </div>
+        </div>
+    </div>
   )
 }
 
