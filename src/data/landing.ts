@@ -1,7 +1,34 @@
+export const languages = [
+    {lan: 'ES'},
+    {lan: 'EN'},
+]
+
 export interface Tag {
     title: string,
     styles: string,
 }
+
+// <li className="hover:text-slate-400 lg:text-xl"><Link to='/resume'>Experiencia</Link></li>
+// <li className="hover:text-slate-400 lg:text-xl"><Link to='/experience'>Proyectos</Link></li>
+// <li className="hover:text-slate-400 lg:text-xl"><Link to='/projects'>Curriculum</Link></li>
+
+export const navData = [
+    {
+        titleEs: 'Experiencia',
+        titleEn: 'Experience',
+        route: '/experience',
+    },
+    {
+        titleEs: 'Proyectos',
+        titleEn: 'Projects',
+        route: '/projects',
+    },
+    {
+        titleEs: 'Curriculum',
+        titleEn: 'Resume',
+        route: '/resume',
+    },
+]
 
 export const heroData = {
     title: {

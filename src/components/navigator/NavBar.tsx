@@ -4,10 +4,13 @@ import { Icon } from "@tremor/react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import logo from '../../assets/imgs/logo-no-background.png'
+import { languages, navData } from "../../data/landing"
+import useLanguageStore from "../../store/store"
 
 const NavBar = () => {
 
     const [show, setShow] = useState(false)
+    const { lan, select } = useLanguageStore()
 
   return (
     <header className="w-full fixed top-0 z-10 px-8 ">
@@ -26,12 +29,13 @@ const NavBar = () => {
                         className="lg:w-[30%] w-full h-full fixed top-0 right-0 flex flex-col justify-start items-center py-4 backdrop-blur-xl bg-slate-950/60 gap-12">
                             <Icon onClick={() => setShow(false)} className="cursor-pointer" size="xl" icon={RiCloseLine}/>
                             <p className="lg:hidden py-4 cursor-pointer">Logo</p>
-                            <li className="hover:text-slate-400 lg:text-xl"><Link to='/resume'>Experiencia</Link></li>
-                            <li className="hover:text-slate-400 lg:text-xl"><Link to='/experience'>Proyectos</Link></li>
-                            <li className="hover:text-slate-400 lg:text-xl"><Link to='/projects'>Curriculum</Link></li>
+                            {navData.map( nav => (
+                                <li className="hover:text-slate-400 lg:text-xl"><Link to={nav.route}>{lan == 'ES' ? nav.titleEs : nav.titleEn}</Link></li>
+                            ))}
                             <div className="flex gap-6">
-                                <p>ES</p>
-                                <p>EN</p>
+                                {languages.map( language => (
+                                    <p onClick={() => select(language.lan)} className={`cursor-pointer  ${language.lan == lan ? 'text-blue-500' : 'hover:text-slate-400'}`}>{language.lan}</p>
+                                ))}
                             </div>
                             <div className="flex gap-4">
                                 <Icon icon={RiGithubFill}/>

@@ -14,10 +14,10 @@ const MainPage = () => {
             <div className="relative min-h-screen bg-slate-950">
                 <About />
                 <Skills />
+                <Contact />
             </div>
         </div>
         <Developer />
-        <Contact />
     </div>
   )
 }
