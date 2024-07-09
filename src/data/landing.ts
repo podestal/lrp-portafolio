@@ -120,3 +120,30 @@ export const skills = [
         ],
     },
 ]
+
+export const contactData = {
+    title: {
+        titleEs: 'Envíame un mensaje',
+        titleEn: 'Send me a message',
+        subTitleEs: 'Alguna pregunta o propuesta, no dudes en contactarme',
+        subTitleEn: 'Any question or proposal, just send me a message'
+    },
+    name: {
+        labelEs: 'Tu Nombre',
+        labelEn: 'Your Name',
+        placeholderEs: 'Escribe tu nombre ...',
+        placeholderEn: 'Write your name ...'
+    },
+    email: {
+        labelEs: 'Tu Correo Electrónico',
+        labelEn: 'Your Email',
+        placeholderEs: 'Escribe tu correo electrónico ...',
+        placeholderEn: 'Write your email address ...'
+    },
+    message: {
+        labelEs: 'Tu Mensage',
+        labelEn: 'Your Message',
+        placeholderEs: 'Hola Luis mi nombre es X, necesito una aplicación web para la empresa X, contáctame a la brevedad a este número X para discutirlo ...',
+        placeholderEn: 'Hi Luis my name is x, I need a web app for the companny X, reach out to me as soon as possible, my cellphone is X ...'
+    },
+}

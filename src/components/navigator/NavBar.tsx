@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { RiMenu2Fill, RiCloseLine} from "@remixicon/react"
+import { RiMenu2Fill, RiCloseLine, RiGithubFill, RiLinkedinFill, RiTwitterXFill} from "@remixicon/react"
 import { Icon } from "@tremor/react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -24,11 +24,20 @@ const NavBar = () => {
                         exit={{opacity: 0, translateX: 200}}
                         transition={{duration: 1}}
                         className="lg:w-[30%] w-full h-full fixed top-0 right-0 flex flex-col justify-start items-center py-4 backdrop-blur-xl bg-slate-950/60 gap-12">
-                        <Icon onClick={() => setShow(false)} className="cursor-pointer" size="xl" icon={RiCloseLine}/>
-                        <p className="lg:hidden py-4 cursor-pointer">Logo</p>
-                        <li className="hover:text-slate-400"><Link to='/resume'>Experiencia</Link></li>
-                        <li className="hover:text-slate-400"><Link to='/experience'>Proyectos</Link></li>
-                        <li className="hover:text-slate-400"><Link to='/projects'>Curriculum</Link></li>
+                            <Icon onClick={() => setShow(false)} className="cursor-pointer" size="xl" icon={RiCloseLine}/>
+                            <p className="lg:hidden py-4 cursor-pointer">Logo</p>
+                            <li className="hover:text-slate-400 lg:text-xl"><Link to='/resume'>Experiencia</Link></li>
+                            <li className="hover:text-slate-400 lg:text-xl"><Link to='/experience'>Proyectos</Link></li>
+                            <li className="hover:text-slate-400 lg:text-xl"><Link to='/projects'>Curriculum</Link></li>
+                            <div className="flex gap-6">
+                                <p>ES</p>
+                                <p>EN</p>
+                            </div>
+                            <div className="flex gap-4">
+                                <Icon icon={RiGithubFill}/>
+                                <Icon icon={RiLinkedinFill}/>
+                                <Icon icon={RiTwitterXFill}/>
+                            </div>
                     </motion.ul>  
                     }
                 </div>
