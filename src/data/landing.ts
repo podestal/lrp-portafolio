@@ -1,3 +1,8 @@
+export interface Tag {
+    title: string,
+    styles: string,
+}
+
 export const heroData = {
     title: {
         titleEs: 'Desarrollador Full Stack',
@@ -12,17 +17,6 @@ export const heroData = {
 export const skills = [
     {
         title: {
-            titleEs: 'Diseño',
-            titleEn: 'Design',
-        },
-        description: {
-            descriptionEs: 'Creación de experiencias de usuario intuitivas y atractivas interfaces de usuario. Colaboración en el diseño, prototipos y pruebas de usabilidad, aplicando principios de diseño centrado en el usuario para mejorar la funcionalidad y estética de aplicaciones y sitios web.',
-            descriptionEn: 'Development of intuitive user experiences and visually appealing user interfaces. Take care of designing, prototypes, and conduct usability testing. By applying user-centered design principles, they aim to enhance the functionality and aesthetics of applications and websites.'
-        },
-        styles: 'text-left self-start',
-    },
-    {
-        title: {
             titleEs: 'Frontend',
             titleEn: 'Frontend',
         },
@@ -31,6 +25,28 @@ export const skills = [
             descriptionEn: 'Creation and maintenance of the visual and interactive elements of websites and applications. Performance optimization, ensuring accessibility, and implementing responsive design. Lastly development of complex functionalities and continuously enhance the user experience.'
         },
         styles: 'text-right self-end',
+        tags: [
+            {
+                title: 'HTML',
+                styles: 'text-slate-50 bg-gradient-to-r from-orange-600 to-orange-400'
+            },
+            {
+                title: 'CSS',
+                styles: 'text-slate-50 bg-gradient-to-r from-blue-800 to-sky-400',
+            },
+            {
+                title: 'TS',
+                styles: 'text-slate-50 bg-gradient-to-r from-blue-950 to-blue-700',
+            },
+            {
+                title: 'React',
+                styles: 'text-slate-50 bg-gradient-to-r from-blue-500 to-blue-300',
+            },
+            {
+                title: 'Tailwind',
+                styles: 'text-slate-50 bg-gradient-to-r from-blue-800 to-sky-400',
+            },
+        ]
     },
     {
         title: {
@@ -42,5 +58,65 @@ export const skills = [
             descriptionEn: 'Building and maintaining server logic, databases, and the infrastructure of web applications. Management of databases, security, and optimization of server performance. Ensure that applications are scalable, secure, and efficient.'
         },
         styles: 'text-left self-start',
+        tags: [
+            {
+                title: 'Python',
+                styles: 'text-slate-50 bg-gradient-to-r from-green-950 to-green-800'
+            },
+            {
+                title: 'Django',
+                styles: 'text-slate-50 bg-gradient-to-r from-green-950 to-green-800'
+            },
+            {
+                title: 'MySQL',
+                styles: 'text-slate-50 bg-gradient-to-r from-sky-700 to-orange-600'
+            },
+            {
+                title: 'PostgreSQL',
+                styles: 'text-slate-50 bg-gradient-to-r from-blue-800 to-sky-400'
+            },
+            {
+                title: 'Pytest',
+                styles: 'text-slate-50 bg-gradient-to-r from-blue-500 via-green-500 to-red-500'
+            },
+            {
+                title: 'Git',
+                styles: 'text-slate-50 bg-black'
+            },
+            
+        ],
+    },
+    {
+        title: {
+            titleEs: 'DevOps',
+            titleEn: 'DevOps',
+        },
+        description: {
+            descriptionEs: 'Trabajar en la automatización, integración continua, despliegue de aplicaciones y gestión de infraestructura como código.',
+            descriptionEn: 'Work on automation, continuous integration, application deployment, and infrastructure as code management.'
+        },
+        styles: 'text-right self-end',
+        tags: [
+            {
+                title: 'Linux',
+                styles: 'text-black bg-slate-50'
+            },
+            {
+                title: 'Nginx',
+                styles: 'text-slate-50 bg-gradient-to-r from-green-950 to-green-800'
+            },
+            {
+                title: 'AWS',
+                styles: 'text-amber-500 bg-slate-50'
+            },
+            {
+                title: 'Docker',
+                styles: 'text-slate-50 bg-gradient-to-r from-sky-700 to-sky-400'
+            },
+            {
+                title: 'GH Actions',
+                styles: 'text-slate-50 bg-black'
+            },
+        ],
     },
 ]

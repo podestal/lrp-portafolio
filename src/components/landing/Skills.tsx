@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { skills } from "../../data/landing"
+import Tags from '../../utils/Tags'
 
 const Skills = () => {
   return (
@@ -15,10 +16,13 @@ const Skills = () => {
                 initial={{opacity: 0, translateX: skill.styles == 'text-left self-start' ? -200 : 200}}
                 whileInView={{opacity: 1, translateX: 0}}
                 transition={{duration: 1.2}}
-                className={`card-wrapper relative overflow-hidden rounded-2xl bg-transparent w-full lg:w-[60%] h-[320px] lg:h-[240px] lg:${skill.styles}`}>
-                <div className={` card-content px-8 py-4 bg-slate-900 flex flex-col items-center gap-12 lg:gap-6 rounded-3xl `}>
+                className={`card-wrapper relative overflow-hidden rounded-2xl bg-transparent w-full lg:w-[70%] max-lg:min-h-[720px] lg:min-h-[320px] lg:${skill.styles}`}>
+                <div className={` card-content px-8 py-4 bg-slate-900 flex flex-col items-center justify-start gap-12 lg:gap-6 rounded-3xl `}>
                     <h3 className={`text-4xl lg:text-5xl`}>{skill.title.titleEs}</h3> 
                     <p className={`text-md lg:text-lg`}>{skill.description.descriptionEs}</p>
+                    <Tags 
+                        tags={skill.tags}
+                    />
                 </div>
             </motion.div>
             
