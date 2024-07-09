@@ -41,7 +41,7 @@ const Contact = () => {
                 <p>{data.messageLabel}</p>
                 <Textarea placeholder={data.messagePlaceHolder} className="px-6 py-6 lg:w-[750px] h-[200px]"/>
             </div>
-            <Button color="blue">Enviar</Button>
+            <Button color="blue">{data.buttonText}</Button>
         </form>
     </section>
   )

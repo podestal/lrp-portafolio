@@ -9,7 +9,7 @@ const Skills = () => {
     const skillsData = lan == 'ES' ? skills['ES'] : skills['EN']
 
   return (
-    <div className="max-w-full h-full flex flex-col justify-center items-center gap-20">
+    <div className="max-w-full min-h-screen lg:min-h-[220vh] flex flex-col justify-center items-center gap-20">
         <motion.h2 
             initial={{opacity: 0, translateY: 200}}
             whileInView={{opacity: 1, translateY: 0}}
