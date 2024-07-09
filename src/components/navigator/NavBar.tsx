@@ -28,7 +28,7 @@ const NavBar = () => {
                         transition={{duration: 1}}
                         className="lg:w-[30%] w-full h-full fixed top-0 right-0 flex flex-col justify-start items-center py-4 backdrop-blur-xl bg-slate-950/60 gap-12">
                             <Icon onClick={() => setShow(false)} className="cursor-pointer" size="xl" icon={RiCloseLine}/>
-                            <p className="lg:hidden py-4 cursor-pointer">Logo</p>
+                            <Link to='/'><img className="lg:hidden py-4 cursor-pointer w-[100px]" src={logo} alt="" /></Link>
                             {navData.map( nav => (
                                 <li className="hover:text-slate-400 lg:text-xl"><Link to={nav.route}>{lan == 'ES' ? nav.titleEs : nav.titleEn}</Link></li>
                             ))}

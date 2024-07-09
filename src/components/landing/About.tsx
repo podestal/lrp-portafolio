@@ -24,7 +24,7 @@ const About = () => {
             transition={{duration: 1.2}}
             className="w-full flex flex-col justify-center items-center min-h-screen bg-slate-900 gap-6 font-montserrat">
             <h3 className="lg:text-7xl text-4xl">{data.aboutTitle}</h3>
-            <p className="text-slate-50 lg:leading-8 lg:text-xl font-poppins text-left w-[60%]">{data.description}</p>
+            <p className="text-slate-50 leading-7 lg:leading-8 lg:text-xl font-poppins text-left w-[60%]">{data.description}</p>
         </motion.div>
     </section>
   )

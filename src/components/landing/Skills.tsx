@@ -14,7 +14,7 @@ const Skills = () => {
             initial={{opacity: 0, translateY: 200}}
             whileInView={{opacity: 1, translateY: 0}}
             transition={{duration: 1.2}}
-            className="text-6xl lg:text-7xl py-10">{skillsData.title}</motion.h2>
+            className="text-6xl lg:text-7xl py-2">{skillsData.title}</motion.h2>
         <div className="max-w-[1280px] flex flex-col gap-12 w-full mx-auto p-4 rounded-3xl">
         {skillsData.data.map( skill => (
             <motion.div 

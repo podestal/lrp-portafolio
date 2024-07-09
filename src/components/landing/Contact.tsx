@@ -18,7 +18,7 @@ const Contact = () => {
             <h2 className="lg:text-7xk text-6xl text-center">{data.title}</h2>
             <p>{data.subTitle}</p>
         </motion.div>
-        <form className="w-full flex flex-col gap-12 justify-center items-center lg:text-xl">
+        <form className="w-full flex flex-col gap-12 justify-center items-center lg:text-xl ">
             <div className="max-lg:w-[75%] flex justify-center max-lg:flex-col items-center gap-8">
                 <motion.div 
                     initial={{opacity: 0, translateX: -100}}
@@ -43,7 +43,7 @@ const Contact = () => {
                 transition={{duration: 1.2}}
                 className="max-lg:w-[75%] w-full flex flex-col justify-center items-center gap-4">
                 <p>{data.messageLabel}</p>
-                <Textarea placeholder={data.messagePlaceHolder} className="px-6 py-6 lg:w-[750px] h-[200px]"/>
+                <Textarea placeholder={data.messagePlaceHolder} className="px-6 py-6 lg:w-[930px] h-[200px]"/>
             </motion.div>
             <Button color="blue">{data.buttonText}</Button>
         </form>
