@@ -270,28 +270,24 @@ export const skills = {
 // ]
 
 export const contactData = {
-    title: {
-        titleEs: 'Envíame un mensaje',
-        titleEn: 'Send me a message',
-        subTitleEs: 'Alguna pregunta o propuesta, no dudes en contactarme',
-        subTitleEn: 'Any question or proposal, just send me a message'
+    'ES': {
+        title: 'Envíame un mensaje',
+        subTitle: 'Alguna pregunta o propuesta, no dudes en contactarme',
+        nameLabel: 'Tu Nombre',
+        namePlaceHolder: 'Escribe tu nombre ...',
+        emailLabel: 'Tu Correo Electrónico',
+        emailPlaceHolder: 'Escribe tu correo electrónico ...',
+        messageLabel: 'Tu Mensage',
+        messagePlaceHolder: 'Hola Luis mi nombre es X, necesito una aplicación web para la empresa X, contáctame a la brevedad a este número X para discutirlo ...',
     },
-    name: {
-        labelEs: 'Tu Nombre',
-        labelEn: 'Your Name',
-        placeholderEs: 'Escribe tu nombre ...',
-        placeholderEn: 'Write your name ...'
-    },
-    email: {
-        labelEs: 'Tu Correo Electrónico',
-        labelEn: 'Your Email',
-        placeholderEs: 'Escribe tu correo electrónico ...',
-        placeholderEn: 'Write your email address ...'
-    },
-    message: {
-        labelEs: 'Tu Mensage',
-        labelEn: 'Your Message',
-        placeholderEs: 'Hola Luis mi nombre es X, necesito una aplicación web para la empresa X, contáctame a la brevedad a este número X para discutirlo ...',
-        placeholderEn: 'Hi Luis my name is x, I need a web app for the companny X, reach out to me as soon as possible, my cellphone is X ...'
-    },
+    'EN': {
+        title: 'Send me a message',
+        subTitle: 'Any question or proposal, just send me a message',
+        nameLabel: 'Your Name',
+        namePlaceHolder: 'Write your name ...',
+        emailLabel: 'Your Email',
+        emailPlaceHolder: 'Write your email address ...',
+        messageLabel: 'Your Message',
+        messagePlaceHolder: 'Hi Luis my name is x, I need a web app for the companny X, reach out to me as soon as possible, my cellphone is X ...',
+    }
 }
