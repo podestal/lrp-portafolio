@@ -1,4 +1,5 @@
 import { projects } from "../data/projects"
+import { Link } from "react-router-dom"
 import useLanguageStore from "../store/store"
 import { motion } from "framer-motion"
 
@@ -21,15 +22,17 @@ const Proyectos = () => {
           className="w-full grid grid-cols-1 lg:grid-cols-3 text-center mt-10 gap-12">
           {projects.map( project => (
             <div className="bg-black rounded-t-3xl w-full">
-              <a href="" className="w-full h-full">
+              <Link 
+                to={`/projects/${project.id}`}
+                className="w-full h-full">
                 <div className="w-full h-[300px] flex justify-center items-center">
-                  <img className={`${project.title == 'MyShares' && 'w-[160px] h-[140px]'}`} src={project.logo} />
+                  <img className={`${project.title == 'MyShares' && 'w-[160px] h-[140px]'} ${project.title == 'Portafolio' && 'w-[160px] h-[50px]'}`} src={project.logo} />
                 </div>
                 <div className="bg-slate-900" key={project.title}>
                   <h4 className="lg:text-2xl py-4">{project.title}</h4>
                 </div>
-              </a>
-              <a href={project.link}>
+              </Link>
+              <a target="_blank" href={project.link}>
                 <p className=" text-blue-700 py-4 w-full hover:text-blue-500">{project.linkTitle}</p>
               </a>
             </div>

@@ -5,6 +5,7 @@ import MainPage from "../pages/MainPage"
 import Curriculum from "../pages/Curriculum"
 import Experience from "../pages/Experience"
 import Proyectos from "../pages/Proyectos"
+import DetailProject from "../pages/DetailProject"
 
 const router = createBrowserRouter([
     {   
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
             { path: 'resume', element: <Curriculum /> },
             { path: 'experience', element: <Experience /> },
             { path: 'projects', element: <Proyectos /> },
+            { path: 'projects/:id', element: <DetailProject /> },
         ]
     }
 ])

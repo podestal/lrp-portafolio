@@ -149,7 +149,7 @@ export const otherSkills = [
     'Terminal',
     'GitHub',
     'Scrum',
-
+    'Stripe',
 ]
 
 export const softSkills = {
