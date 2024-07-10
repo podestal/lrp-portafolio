@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="w-full h-full flex flex-col justify-start items-center lg:gap-6 gap-2">
                 <h3 className="text-3xl">{contactDataLan.title}</h3>
                 <p className="text-lg text-slate-400 text-center">{contactDataLan.subTitle}</p>
-                <p className="text-xl">l.r.p.2991@gmail.com</p>
+                <p className="text-xl text-slate-400">l.r.p.2991@gmail.com</p>
             </div>
         </div>
     </footer>
