@@ -79,7 +79,7 @@ const tagsBackend = [
     },
     {
         title: 'Pytest',
-        styles: 'text-slate-50 bg-gradient-to-r from-blue-500 via-green-500 to-red-500'
+        styles: 'text-slate-50 bg-gradient-to-r from-blue-500 to-green-500'
     },
     {
         title: 'Git',
@@ -116,19 +116,19 @@ export const skills = {
         title: 'Habilidades',
         data: [
             {
-                title: 'Frontend',
+                title: 'Front-End',
                 description: 'Creación y mantenimiento de la parte visual e interactiva de sitios web y aplicaciones. optimización del rendimiento, accesibilidad y diseño responsivo, implementación de interfaces de usuario eficientes y atractivas. Por último desarrollo de funcionalidades complejas y mejora continuamente la experiencia del usuario.',
                 styles: 'text-right self-end',
                 tags: tagsFrontend
             },
             {
-                title: 'Backend',
+                title: 'Back-End',
                 description: 'Construcción y mantenimiento de la lógica del servidor, bases de datos y la infraestructura de aplicaciones web. Gestión de bases de datos, seguridad, y optimización del rendimiento del servidor. Asegurar que las aplicaciones sean escalables, seguras y eficientes.',
                 styles: 'text-left self-start',
                 tags: tagsBackend
             },
             {
-                title: 'Devops',
+                title: 'Dev-Ops',
                 description: 'Trabajar en la automatización, integración continua, despliegue de aplicaciones y gestión de infraestructura como código.',
                 styles: 'text-right self-end',
                 tags: tagsDevops
@@ -138,19 +138,19 @@ export const skills = {
         title: 'Skills',
         data: [
         {
-            title: 'Frontend',
+            title: 'Front-End',
             description: 'Creation and maintenance of the visual and interactive elements of websites and applications. Performance optimization, ensuring accessibility, and implementing responsive design. Lastly development of complex functionalities and continuously enhance the user experience.',
             styles: 'text-right self-end',
             tags: tagsFrontend
         },
         {
-            title: 'Backend',
+            title: 'Back-End',
             description: 'Building and maintaining server logic, databases, and the infrastructure of web applications. Management of databases, security, and optimization of server performance. Ensure that applications are scalable, secure, and efficient.',
             styles: 'text-left self-start',
             tags: tagsBackend
         },
         {
-            title: 'Devops',
+            title: 'Dev-Ops',
             description: 'Work on automation, continuous integration, application deployment, and infrastructure as code management.',
             styles: 'text-right self-end',
             tags: tagsDevops
@@ -178,7 +178,7 @@ export const contactData = {
         emailLabel: 'Your Email',
         emailPlaceHolder: 'Write your email address ...',
         messageLabel: 'Your Message',
-        messagePlaceHolder: 'Hi Luis my name is x, I need a web app for the companny X, reach out to me as soon as possible, my cellphone is X ...',
+        messagePlaceHolder: 'Hi Luis my name is X, I need a web app for the companny X, reach out to me as soon as possible, my cellphone is X ...',
         buttonText: 'Send',
     },
 }

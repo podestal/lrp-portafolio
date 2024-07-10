@@ -1,8 +1,8 @@
 import useLanguageStore from "../../store/store"
 import { aboutData } from "../../data/landing"
-import profilePic from '../../assets/imgs/developer-pic.png'
+// import profilePic from '../../assets/imgs/developer-pic.png'
 import { motion } from "framer-motion"
-
+  
 const About = () => {
 
     const lan = useLanguageStore(s => s.lan)
@@ -16,7 +16,8 @@ const About = () => {
             transition={{duration: 1.2}}
             className="w-full flex flex-col justify-start items-center gap-6">
             <h2 className="text-5xl lg:text-8xl text-center py-6">{data.title}</h2>
-            <img src={profilePic} alt="" />
+            {/* <img src={profilePic} alt="" /> */}
+            <p>Profile Picture ...</p>
         </motion.div>
         <motion.div 
             initial={{opacity: 0, translateX: 100}}
