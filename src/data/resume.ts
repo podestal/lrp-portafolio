@@ -3,7 +3,7 @@ export const resumeData = {
         name: 'Luis Alberto',
         lastName: 'Rodríguez Podestá',
         title: 'Desarrollador Full Stack',
-        intro: 'Desarrollador valorado por superar las expectativas y entregar excelentes resultados. Desarrollo productos de alta calidad, escalables y fáciles de usar.',
+        intro: 'Soy un desarrollador de software bilingüe que se caracteriza por superar las expectativas y entregar excelentes resultados. Implemento productos de alta calidad, escalables y fáciles de usar.',
         experienceTitle: 'Experiencia',
         experience: [
             {
@@ -34,7 +34,11 @@ export const resumeData = {
                 dateStart: 'Agosto 2022',
                 dateEnd: 'Junio 2023',
                 responsabilities: [
-                    
+                    'Diseñar soluciones para los problemas de los clientes e implementarlas a través de aplicaciones.',
+                    'Construir sistemas escalables, de bajo costo, tolerantes a fallos y fáciles de gestionar.',
+                    'Desplegar aplicaciones utilizando microservicios de AWS (Lambda, API Gateway, DynamoDB, S3, SQS, Route53, EC2, Cognito, y más).',
+                    'Colaborar con otros miembros del equipo, revisar código, asistir a reuniones diarias de scrum y cumplir con las tareas del sprint de manera oportuna.',
+                    'Optimizar la funcionalidad implementando algoritmos eficientes en tiempo y memoria.',
                 ],
             },
             {
@@ -58,7 +62,7 @@ export const resumeData = {
         name: 'Luis Alberto',
         lastName: 'Rodriguez Podesta',
         title: 'Full Stack Developer',
-        intro: 'Valued developer for surpassing expectations and delivering great results. I develop high-quality, scalable, and user-friendly products.',
+        intro: 'I am a bilingual software developer known for exceeding expectations and delivering excellent results. I implement high-quality, scalable, and user-friendly products.',
         experienceTitle: 'Experience',
         experience: [
             {
@@ -89,7 +93,11 @@ export const resumeData = {
                 dateStart: 'August 2022',
                 dateEnd: 'June 2023',
                 responsabilities: [
-                    
+                    'Design solutions for customer problems, and implement them through applications.',
+                    'Build scalable, low-cost, fault-tolerant and easy-to-manage systems.',
+                    'Deploy applications using AWS microservices (Lambda, API Gateway, DyanmoDB, S3, SQS, Route53, EC2, Cognito, and more).',
+                    'Collaborate with other members of the team, review code, attend everyday scrum meetings, and accomplish the sprint tasks in a timely manner.',
+                    'Optimize functionality by implementing time and memory-efficient algorithms.'
                 ],
             },
             {
@@ -109,4 +117,66 @@ export const resumeData = {
             },
         ]
     }
+}
+
+export const coreSkills = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'TypeScript',
+    'ReactJS',
+    'TailwindCSS',
+    'Vitest',
+    'React Testing Library',
+    'Python',
+    'Django',
+    'mySQL',
+    'postgreSQL',
+    'pytest',
+    'Nginx',
+    'Docker',
+    'Linux',
+    'Git',
+    'GitHub Actions',
+    'AWS'
+]
+
+export const otherSkills = [
+    'Postman',
+    'Visual Studio Code',
+    'JIRA',
+    'Slack',
+    'Terminal',
+    'GitHub',
+    'Scrum',
+
+]
+
+export const softSkills = {
+    'ES': [
+        'Comunicación',
+        'Trabajo en Equipo',
+        'Resolución de Problemas',
+        'Adaptabilidad',
+        'Gestión del Tiempo',
+        'Atención al Detalle',
+        'Creatividad',
+        'Curiosidad',
+        'Paciencia',
+        'Empatía',
+        'Responsabilidad',
+    ],
+    'EN': [
+        'Communication',
+        'Teamwork',
+        'Problem-Solving',
+        'Adaptability',
+        'Time Management',
+        'Attention to Detail',
+        'Creativity',
+        'Curiosity',
+        'Patience',
+        'Empathy',
+        'Accountability',
+    ]
 }
