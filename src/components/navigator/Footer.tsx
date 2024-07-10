@@ -15,7 +15,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full min-h-[160px] bg-black py-10 px-4">
-        <div className="h-full grid grid-cols-1 lg:grid-cols-3 gap-10 lg:max-w-[1280px]">
+        <div className="h-full grid grid-cols-1 lg:grid-cols-3 gap-10 lg:max-w-[1280px] mx-auto">
             <div className="w-full h-full flex flex-col justify-start items-center gap-2">
                 <Link to='/'><img className="py-4 cursor-pointer w-[80px]" src={logo} alt="" /></Link>
                 <h3 className="lg:text-xl">{heroDataLan.title}</h3>

@@ -9,7 +9,7 @@ const Contact = () => {
     const data = lan == 'ES' ? contactData['ES'] : contactData['EN']
 
   return (
-    <section className="max-w-[1280px] min-h-[140vh] mx-auto flex flex-col items-center justify-center gap-12">
+    <section className="max-w-[1280px] min-h-[100vh] mx-auto flex flex-col items-center justify-center gap-12">
         <motion.div 
             initial={{opacity: 0, translateY: -200}}
             whileInView={{opacity: 1, translateY: 0}}

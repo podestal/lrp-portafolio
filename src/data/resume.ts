@@ -7,7 +7,7 @@ export const resumeData = {
         experienceTitle: 'Experiencia',
         experience: [
             {
-                company: 'Axios Informátice SRL',
+                company: 'Axios Informática SRL',
                 title: 'Desarrollador Full-Stack',
                 description: 'Una startup de desarrollo de software de vanguardia dedicada a revolucionar el panorama tecnológico, especializada en crear productos de alta calidad, escalables y confiables.',
                 dateStart: 'Junio 2023',
@@ -66,7 +66,7 @@ export const resumeData = {
         experienceTitle: 'Experience',
         experience: [
             {
-                company: 'Axios Informátice SRL',
+                company: 'Axios Informática SRL',
                 title: 'Full-Stack Developer',
                 description: 'A cutting-edge software development startup dedicated to revolutionizing the tech landscape, specializing in creating high-quality, scalable, and reliable products.',
                 dateStart: 'June 2023',
