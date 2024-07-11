@@ -15,8 +15,8 @@ const DetailProject = () => {
 
   return (
     <div className="min-h-screen w-full mt-24 flex flex-col justify-center items-center">
-        <div className="w-[1280px] mx-auto">
-            <h3 className="lg:text-7xl font-montserrat text-center">{currentProject?.title}</h3>
+        <div className="lg:w-[1280px] mx-auto">
+            <h3 className="lg:text-7xl px-4 text-5xl font-montserrat text-center">{currentProject?.title}</h3>
             <ImgCarousel 
                 imgs={currentProject?.imgs}
             />

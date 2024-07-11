@@ -16,9 +16,17 @@ const ImgCarousel = ({ imgs }: Props) => {
     const next = () => setCurr(curr => curr === imgs.length - 1 ? 0 : curr + 1)
 
   return (
-    <div className="flex gap-6 justify-center my-10 overflow-hidden relative">
-        <img className="h-[500px]" src={imgs[curr]}/>
-        <div className="absolute inset-0 flex items-center justify-between p-4">
+    <div className="flex gap-6 flex-col items-center justify-center my-10 overflow-hidden relative">
+        <img className="w-[560px] h-[280px] lg:w-[800px] lg:h-[500px] object-contain mx-4" src={imgs[curr]}/>
+        {/* <div className="absolute max-lg:hidden inset-0 flex items-center justify-between p-4">
+            <button onClick={prev}>
+                <Icon icon={RiArrowLeftCircleLine} size="xl"/>
+            </button>
+            <button onClick={next}>
+                <Icon icon={RiArrowRightCircleLine} size="xl"/>
+            </button>
+        </div> */}
+        <div className="w-full  flex items-center justify-evenly p-4">
             <button onClick={prev}>
                 <Icon icon={RiArrowLeftCircleLine} size="xl"/>
             </button>
@@ -26,7 +34,6 @@ const ImgCarousel = ({ imgs }: Props) => {
                 <Icon icon={RiArrowRightCircleLine} size="xl"/>
             </button>
         </div>
-        
     </div>
   )
 }

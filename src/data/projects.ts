@@ -55,6 +55,7 @@ import share5 from '../assets/imgs/shares/share5.png'
 import share6 from '../assets/imgs/shares/share6.png'
 
 export interface ProjectDetails {
+    overviewTitle: string,
     overview: string,
     featuresTitle: string,
     features: string[],
@@ -72,6 +73,7 @@ export const projects = [
         linkTitle: 'luisrodriguezpodesta.com',
         details: {
             'ES': {
+                overviewTitle: 'Descripción',
                 overview: 'Aplicación web front-end diseñada para servir como un sitio personal que muestra mis habilidades en UI/UX y desarrollo de software. Esta aplicación proporciona una plataforma interactiva para exhibir mi currículum, experiencia profesional y los proyectos en los que he trabajado. Cada proyecto incluye descripciones detalladas y enlaces a demos y repositorios de GitHub, permitiendo a los visitantes explorar mi trabajo de manera completa.',
                 featuresTitle: 'Características',
                 features: [
@@ -94,6 +96,7 @@ export const projects = [
                 ]
             },
             'EN': {
+                overviewTitle: 'Description',
                 overview: 'Front-end web application designed to serve as a personal site that showcases my UI/UX and development skills. This app provides an interactive platform to display my resume, professional experience, and projects I have worked on. Each project includes detailed descriptions and links to demos and GitHub repositories, allowing visitors to explore my work comprehensively.',
                 featuresTitle: 'Features',
                 features: [
@@ -127,6 +130,7 @@ export const projects = [
         linkTitle: 'desarrollo.muniislay.gob.pe',
         details: {
             'ES': {
+                overviewTitle: 'Descripción',
                 overview: 'Aplicación web front-end diseñada para promover el turismo en una ciudad. Esta aplicación utiliza la API de Google Maps para ayudar a los no residentes a descubrir varios lugares, proporcionando una experiencia interactiva e informativa. Los visitantes pueden explorar los tres principales atractivos turísticos con fotos detalladas e información histórica. Además, la aplicación ofrece información esencial sobre los servicios de emergencia en la ciudad, garantizando una visita segura y placentera.',
                 featuresTitle: 'Características',
                 features: [
@@ -148,6 +152,7 @@ export const projects = [
                 ]
             },
             'EN': {
+                overviewTitle: 'Description',
                 overview: 'Front-end web application designed to promote tourism in a city. This app leverages the Google Maps API to help non-locals discover various places, providing an interactive and informative experience. Visitors can explore the three main tourist attractions with detailed pictures and historical information. Additionally, the app offers essential information about emergency services in the city, ensuring a safe and enjoyable visit.',
                 featuresTitle: 'Features',
                 features: [
@@ -180,6 +185,7 @@ export const projects = [
         linkTitle: 'eltecladodesocrates.com',
         details: {
             'ES': {
+                overviewTitle: 'Descripción',
                 overview: 'El Teclado de Sócrates es una aplicación web full-stack construida usando Django para el backend y React para el frontend. Este blog se centra en el desarrollo de software con una intención educativa, proporcionando a los lectores valiosas ideas, tutoriales y recursos para mejorar sus habilidades y conocimientos en programación.',
                 featuresTitle: 'Características',
                 features: [
@@ -201,6 +207,7 @@ export const projects = [
                 ]
             },
             'EN': {
+                overviewTitle: 'Description',
                 overview: 'El Teclado de Sócrates is a Full-stack web application built using Django for the backend and React for the frontend. This blog focuses on software development with an educational intent, providing readers with valuable insights, tutorials, and resources to enhance their coding skills and knowledge.',
                 featuresTitle: 'Features',
                 features: [
@@ -233,6 +240,7 @@ export const projects = [
         linkTitle: 'edumetrica.com',
         details: {
             'ES': {
+                overviewTitle: 'Descripción',
                 overview: 'Edumetrica es una aplicación web y móvil full-stack diseñada para facilitar la comunicación y el intercambio de información entre los profesores y los padres de los alumnos. Esta aplicación permite a los profesores publicar información académica sobre sus estudiantes, incluyendo asignaturas, asistencia y calificaciones. La aplicación calcula automáticamente los promedios y resultados finales, que pueden ser entregados de manera organizada.',
                 featuresTitle: 'Características',
                 features: [
@@ -260,6 +268,7 @@ export const projects = [
                 ]
             },
             'EN': {
+                overviewTitle: 'Description',
                 overview: 'Edumetrica is a full-stack web and mobile application designed to facilitate communication and information sharing between school teachers and parents. This app allows teachers to post academic information about their students, including subjects, attendance, and grades. The application automatically calculates averages and final results, which can be delivered in an organized manner.',
                 featuresTitle: 'Features',
                 features: [
@@ -298,6 +307,7 @@ export const projects = [
         linkTitle: 'myshares-web.com',
         details: {
             'ES': {
+                overviewTitle: 'Descripción',
                 overview: 'MyShares es una aplicación web full stack diseñada para conectar a personas que desean compartir sus cuentas de streaming con aquellos que necesitan acceso a servicios de streaming sin tener que comprar una suscripción completa. La aplicación también proporciona una función conveniente donde los usuarios pueden ingresar el título de una película o serie de televisión para descubrir en qué plataformas se está transmitiendo ese contenido.',
                 featuresTitle: 'Características',
                 features: [
@@ -323,6 +333,7 @@ export const projects = [
                 ]
             },
             'EN': {
+                overviewTitle: 'Description',
                 overview: 'MyShares is a full stack web application designed to connect individuals who want to share their streaming accounts with those who need access to streaming services without purchasing an entire subscription. The app also provides a convenient feature where users can input the title of a movie or TV show to discover which platforms are currently streaming that content.',
                 featuresTitle: 'Features',
                 features: [

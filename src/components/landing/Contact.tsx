@@ -69,14 +69,14 @@ const Contact = () => {
     }
 
   return (
-    <section className="lg:max-w-[1280px]  min-h-screen mx-auto flex flex-col items-center justify-center gap-12">
+    <section className="lg:max-w-[1280px]  min-h-screen mx-auto flex flex-col items-center justify-center gap-12 my-10">
         <motion.div 
             initial={{opacity: 0, translateY: -200}}
             whileInView={{opacity: 1, translateY: 0}}
             transition={{duration: 1.2}}
             className="flex flex-col justify-center items-center gap-6 ">
-            <h2 className="lg:text-7xk text-6xl text-center">{data.title}</h2>
-            <p>{data.subTitle}</p>
+            <h2 className="lg:text-7xl text-5xl text-center">{data.title}</h2>
+            <p className="text-xl">{data.subTitle}</p>
         </motion.div>
         {error && 
         <motion.div
@@ -94,7 +94,7 @@ const Contact = () => {
         >
             <Callout title={data.successMessage} color='teal'/>
         </motion.div>}
-        <form onSubmit={handleSendEmail} ref={form} className=" overflow-hidden  w-full flex flex-col gap-12 justify-center items-center lg:text-xl">
+        <form onSubmit={handleSendEmail} ref={form} className=" overflow-hidden w-full flex flex-col gap-12 justify-center items-center lg:text-xl">
             <div className="max-lg:w-[75%] flex justify-center max-lg:flex-col items-center gap-8">
                 <motion.div 
                     initial={{opacity: 0, translateX: -100}}
