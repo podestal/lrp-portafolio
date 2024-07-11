@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { resumeData, coreSkills, otherSkills, softSkills } from "../data/resume"
+import { motion } from "framer-motion"
 import useLanguageStore from "../store/store"
 
 const Curriculum = () => {
@@ -13,7 +14,11 @@ const Curriculum = () => {
   }, [])
 
   return (
-    <div className="w-full min-h-screen">
+    <motion.div 
+      initial={{opacity: 0, translateY: -100}}
+      whileInView={{opacity: 1, translateY: 0}}
+      transition={{duration: 0.8}}
+      className="w-full min-h-screen">
       <div className="bg-slate-900 lg:max-w-[1280px] h-full mx-auto my-20 font-poppins py-10 px-4 max-lg:mx-6">
         <div className="w-full border-t-2 border-b-2 py-6 flex flex-col gap-6 items-start max-lg:items-center">
           <h2 className="max-lg:hidden font-montserrat text-7xl font-bold">{data.name}</h2>
@@ -75,7 +80,7 @@ const Curriculum = () => {
           </div>
         </div>
       </div>  
-    </div>
+    </motion.div>
   )
 }
 

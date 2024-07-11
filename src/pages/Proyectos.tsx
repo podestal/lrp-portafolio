@@ -2,10 +2,15 @@ import { projects } from "../data/projects"
 import { Link } from "react-router-dom"
 import useLanguageStore from "../store/store"
 import { motion } from "framer-motion"
+import { useEffect } from "react"
 
 const Proyectos = () => {
 
   const lan = useLanguageStore(s => s.lan)
+
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
 
   return (
     <div className="min-h-screen w-full">

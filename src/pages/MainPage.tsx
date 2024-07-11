@@ -3,8 +3,14 @@ import Skills from "../components/landing/Skills"
 import About from "../components/landing/About"
 import Developer from "../components/landing/Developer"
 import Contact from "../components/landing/Contact"
+import { useEffect } from "react"
 
 const MainPage = () => {
+
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
+
   return (
     <div>
         <div className="h-200vh relative">
