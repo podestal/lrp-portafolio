@@ -13,14 +13,17 @@
     "@emailjs/browser": "^4.3.3",
     "@headlessui/react": "^2.1.2",
     "@headlessui/tailwindcss": "^0.2.1",
+    "@hookform/resolvers": "^3.9.0",
     "@remixicon/react": "^4.2.0",
     "@tremor/react": "^3.17.4",
     "framer-motion": "^11.2.13",
     "lenis": "^1.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.52.1",
     "react-router-dom": "^6.24.1",
     "react-router-hash-link": "^2.4.3",
+    "zod": "^3.23.8",
     "zustand": "^4.5.4"
   },
   "devDependencies": {

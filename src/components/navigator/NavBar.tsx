@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { RiMenu2Fill, RiCloseLine, RiGithubFill, RiLinkedinFill, RiTwitterXFill} from "@remixicon/react"
+import { RiMenu2Fill, RiCloseLine, RiGithubFill, RiLinkedinFill, RiWhatsappLine} from "@remixicon/react"
 import { Icon } from "@tremor/react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -40,7 +40,7 @@ const NavBar = () => {
                             <div className="flex gap-4">
                                 <Icon icon={RiGithubFill}/>
                                 <Icon icon={RiLinkedinFill}/>
-                                <Icon icon={RiTwitterXFill}/>
+                                <Icon icon={RiWhatsappLine}/>
                             </div>
                     </motion.ul>  
                     }

@@ -14,7 +14,7 @@ const Curriculum = () => {
 
   return (
     <div className="w-full min-h-screen">
-      <div className="bg-slate-900 lg:max-w-[1280px] h-full mx-auto my-20 font-poppins py-10 px-4">
+      <div className="bg-slate-900 lg:max-w-[1280px] h-full mx-auto my-20 font-poppins py-10 px-4 max-lg:mx-6">
         <div className="w-full border-t-2 border-b-2 py-6 flex flex-col gap-6 items-start max-lg:items-center">
           <h2 className="max-lg:hidden font-montserrat text-7xl font-bold">{data.name}</h2>
           <h2 className="max-lg:hidden font-montserrat text-7xl font-bold">{data.lastName}</h2>

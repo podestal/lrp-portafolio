@@ -14,12 +14,12 @@ const Proyectos = () => {
           initial={{opacity: 0, translateY: 200}}
           whileInView={{opacity: 1, translateY: 0}}
           transition={{duration: 1.2}}
-          className="lg:text-7xl text-5xl font-montserrat mb-8 font-bold">{lan === 'ES' ? 'Proyectos' : 'Projects'}</motion.h3>
+          className="lg:text-7xl text-5xl font-montserrat lg:mb-8 font-bold">{lan === 'ES' ? 'Proyectos' : 'Projects'}</motion.h3>
         <motion.div 
           initial={{opacity: 0, translateY: 200}}
           whileInView={{opacity: 1, translateY: 0}}
           transition={{duration: 1.2}}
-          className="w-full grid grid-cols-1 lg:grid-cols-3 text-center mt-10 gap-12">
+          className="w-full grid grid-cols-1 lg:grid-cols-3 text-center mt-10 gap-12 max-lg:p-12">
           {projects.map( project => (
             <div className="bg-black rounded-t-3xl w-full">
               <Link 
@@ -29,11 +29,11 @@ const Proyectos = () => {
                   <img className={`${project.title == 'MyShares' && 'w-[160px] h-[140px]'} ${project.title == 'Portafolio' && 'w-[160px] h-[50px]'}`} src={project.logo} />
                 </div>
                 <div className="bg-slate-900" key={project.title}>
-                  <h4 className="lg:text-2xl py-4">{project.title}</h4>
+                  <h4 className="lg:text-2xl text-xl py-4">{project.title}</h4>
                 </div>
               </Link>
               <a target="_blank" href={project.link}>
-                <p className=" text-blue-700 py-4 w-full hover:text-blue-500">{project.linkTitle}</p>
+                <p className=" text-blue-700 py-4 w-full max-lg:text-md hover:text-blue-500">{project.linkTitle}</p>
               </a>
             </div>
           ))}

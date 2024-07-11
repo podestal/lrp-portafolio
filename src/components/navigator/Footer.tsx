@@ -1,4 +1,4 @@
-import { RiGithubFill, RiLinkedinFill, RiTwitterXFill, RiWhatsappLine } from "@remixicon/react"
+import { RiGithubFill, RiLinkedinFill, RiWhatsappLine } from "@remixicon/react"
 import { Icon } from "@tremor/react"
 import { Link } from "react-router-dom"
 import logo from '../../assets/imgs/logo-no-background.png'
@@ -22,7 +22,6 @@ const Footer = () => {
                 <div className="flex gap-4">
                     <a href="#" target="_blank"><Icon icon={RiGithubFill}/></a>
                     <a href="#" target="_blank"><Icon icon={RiLinkedinFill}/></a>
-                    <a href="#" target="_blank"><Icon icon={RiTwitterXFill}/></a>
                     <a href="#" target="_blank"><Icon icon={RiWhatsappLine}/></a>
                 </div>
             </div>
@@ -37,7 +36,6 @@ const Footer = () => {
             <div className="w-full h-full flex flex-col justify-start items-center lg:gap-6 gap-2">
                 <h3 className="text-3xl">{contactDataLan.title}</h3>
                 <p className="text-lg text-slate-400 text-center">{contactDataLan.subTitle}</p>
-                <p className="text-xl text-slate-400">l.r.p.2991@gmail.com</p>
             </div>
         </div>
     </footer>
