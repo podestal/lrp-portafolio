@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <section className=" relative w-full">
-        <div className="max-lg:flex-col min-h-screen flex justify-center items-center mx-auto gap-10 max-w-[1280px]">
+        <div className="max-lg:flex-col min-h-screen flex justify-center items-center mx-10 lg:mx-auto gap-10 overflow-hidden lg:max-w-[1280px] ">
           <motion.div 
               initial={{opacity: 0, translateX: -100}}
               whileInView={{opacity: 1, translateX: 0}}
@@ -25,11 +25,11 @@ const About = () => {
               transition={{duration: 1.2}}
               className="w-full flex flex-col justify-center items-center min-h-screen  gap-6 font-montserrat relative z-20 bg-transparent">
               <h3 className="lg:text-7xl text-4xl">{data.aboutTitle}</h3>
-              <p className="text-slate-50 leading-7 lg:leading-8 lg:text-xl font-poppins text-left w-[60%]">{data.description}</p>
+              <p className="text-slate-50 leading-7 lg:leading-8 lg:text-xl font-poppins text-center lg:text-left lg:w-[60%]">{data.description}</p>
               
           </motion.div>
         </div>
-        <div className="absolute top-0 right-0 bg-slate-900 w-[50%] h-screen z-10"/>
+        <div className="max-lg:hidden absolute top-0 right-0 bg-slate-900 w-[50%] h-screen z-10"/>
     </section>
   )
 }

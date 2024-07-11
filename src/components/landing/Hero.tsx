@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <motion.section
-        className="relative w-full min-h-screen overflow-hidden py-24 text-slate-50 flex items-center"
+        className="relative w-full min-h-screen py-24 text-slate-50 flex items-center"
         style={{
             backgroundImage: backgroundImage
         }}
@@ -32,7 +32,7 @@ const Hero = () => {
             initial={{opacity: 0, translateY: 200}}
             whileInView={{opacity: 1, translateY: 0}}
             transition={{duration: 1.2}}
-            className='max-w-[1280px] flex flex-col justify-center items-center gap-16 mx-auto'>
+            className='max-w-[1280px] overflow-hidden max-md:max-w-[600px] flex flex-col justify-center items-center gap-16 mx-auto'>
             <h2 className='text-center text-6xl lg:text-8xl font-poppins px-4 font-semibold'>{data.title}</h2>
             <p className='w-[80%] lg:w-[60%] text-center text-lg font-montserrat lg:text-2xl px-4 max-lg:py-6'>{data.description}</p>
         </motion.div>

@@ -1,6 +1,7 @@
 import { RiGithubFill, RiLinkedinFill, RiWhatsappLine } from "@remixicon/react"
 import { Icon } from "@tremor/react"
 import { Link } from "react-router-dom"
+import {HashLink} from 'react-router-hash-link'
 import logo from '../../assets/imgs/logo-no-background.png'
 import { navData } from "../../data/landing"
 import useLanguageStore from "../../store/store"
@@ -36,6 +37,8 @@ const Footer = () => {
             <div className="w-full h-full flex flex-col justify-start items-center lg:gap-6 gap-2">
                 <h3 className="text-3xl">{contactDataLan.title}</h3>
                 <p className="text-lg text-slate-400 text-center">{contactDataLan.subTitle}</p>
+                {/* <Button color="blue"></Button> */}
+                <HashLink to='/#contact-section' className="text-blue-500 font-poppins text-lg">Let's Go</HashLink>
             </div>
         </div>
     </footer>

@@ -12,12 +12,14 @@ const MainPage = () => {
                 <Hero />
             </div>
             <div className="relative min-h-screen bg-slate-950">
-                <About />
-                <Skills />
-                <Contact />
+              <About />
+              <Skills />
+              <div id="contact-section"/>
+              <Contact />
+              <Developer />
             </div>
         </div>
-        <Developer />
+        {/*  */}
     </div>
   )
 }

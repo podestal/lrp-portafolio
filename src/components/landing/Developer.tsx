@@ -18,7 +18,7 @@ const Developer = () => {
             className="text-center text-6xl lg:text-8xl">{data.title}</motion.h2>
         <motion.div 
         
-        className="w-[80%] lg:h-[100vh] flex max-lg:flex-col justify-center items-center">
+        className="w-[80%] lg:h-[100vh] flex max-lg:flex-col justify-center items-center lg:max-w-[1280px] overflow-hidden">
             <motion.div 
                 initial={{opacity: 0, translateX: -100}}
                 whileInView={{opacity: 1, translateX: 0}}
