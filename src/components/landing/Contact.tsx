@@ -1,4 +1,4 @@
-import { TextInput, Textarea,Button, Callout } from "@tremor/react"
+import { TextInput, Textarea, Button, Callout } from "@tremor/react"
 import { useRef, useState } from "react"
 import emailjs from '@emailjs/browser'
 import { contactData } from "../../data/landing"
@@ -11,6 +11,7 @@ const Contact = () => {
     const form = useRef<HTMLFormElement | null>(null)
     const name = useRef<HTMLInputElement | null>(null)
     const email = useRef<HTMLInputElement | null>(null)
+    // const message = useRef<HTMLInputElement | null>(null)
     const [message, setMessage] = useState('')
 
     // Error Handling
@@ -57,10 +58,10 @@ const Contact = () => {
             publicKey: 'JWOBBVI0xbGxiZOd0'
         }).then(() => {
             form.current?.reset()
-            setMessage('')
             setSuccess(true)
             setDisable(true)
             setError(false)
+            setMessage('')
         }).catch(() => {
             setSuccess(false)
             setDisable(false)
@@ -124,7 +125,7 @@ const Contact = () => {
                         name="email_id" 
                         type="email"
                         placeholder={data.emailPlaceHolder} 
-                        className="w-full lg:w-[450px]"/>
+                        className="w-full lg:w-[450px] "/>
                 </motion.div>
             </div>
             <motion.div 
@@ -135,12 +136,12 @@ const Contact = () => {
                 <p>{data.messageLabel}</p>
                 <Textarea 
                     value={message}
-                    onChange={e => setMessage(e.target.value)}
+                    onValueChange={value => setMessage(value)}
                     error={messageError}
                     errorMessage={data.messageError}
                     name="message" 
                     placeholder={data.messagePlaceHolder} 
-                    className="px-6 py-6 lg:w-[930px] h-[200px] text-slate-200"/>
+                    className="px-6 py-6 lg:w-[930px] h-[200px]" />
             </motion.div>
             <Button disabled={disable} color="blue">{data.buttonText}</Button>
         </form>

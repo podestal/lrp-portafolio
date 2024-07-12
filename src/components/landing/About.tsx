@@ -9,7 +9,7 @@ const About = () => {
     const data = lan == 'ES' ? aboutData['ES'] : aboutData['EN']
 
   return (
-    <section className=" relative w-full">
+    <section className=" relative w-full bg-slate-950">
         <div className="max-lg:flex-col min-h-screen flex justify-center items-center mx-10 lg:mx-auto gap-10 overflow-hidden lg:max-w-[1280px]">
           <motion.div 
               initial={{opacity: 0, translateX: -100}}
@@ -17,7 +17,7 @@ const About = () => {
               transition={{duration: 1.2}}
               className="w-full flex flex-col justify-start items-center gap-6">
               <h2 className="text-5xl lg:text-8xl text-center py-6">{data.title}</h2>
-              <p>Profile Picture ...</p>
+              {/* <p>Profile Picture ...</p> */}
           </motion.div>
           <motion.div 
               initial={{opacity: 0, translateX: 100}}

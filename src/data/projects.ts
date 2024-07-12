@@ -19,6 +19,16 @@ import islay7 from '../assets/imgs/islay/islay7.png'
 import islay8 from '../assets/imgs/islay/islay8.png'
 import islay9 from '../assets/imgs/islay/islay9.png'
 import islay10 from '../assets/imgs/islay/islay10.png'
+import islay1s from '../assets/imgs/islay/islay1-s.png'
+import islay2s from '../assets/imgs/islay/islay2-s.png'
+import islay3s from '../assets/imgs/islay/islay3-s.png'
+import islay4s from '../assets/imgs/islay/islay4-s.png'
+import islay5s from '../assets/imgs/islay/islay5-s.png'
+import islay6s from '../assets/imgs/islay/islay6-s.png'
+import islay7s from '../assets/imgs/islay/islay7-s.png'
+import islay8s from '../assets/imgs/islay/islay8-s.png'
+import islay9s from '../assets/imgs/islay/islay9-s.png'
+import islay10s from '../assets/imgs/islay/islay10-s.png'
 
 // EDUMETRICA
 import edu1 from '../assets/imgs/edumetrica/edu1.png'
@@ -28,6 +38,13 @@ import edu4 from '../assets/imgs/edumetrica/edu4.png'
 import edu5 from '../assets/imgs/edumetrica/edu5.png'
 import edu6 from '../assets/imgs/edumetrica/edu6.png'
 import edu7 from '../assets/imgs/edumetrica/edu7.png'
+import edu1s from '../assets/imgs/edumetrica/edu1-s.png'
+import edu2s from '../assets/imgs/edumetrica/edu2-s.png'
+import edu3s from '../assets/imgs/edumetrica/edu3-s.png'
+import edu4s from '../assets/imgs/edumetrica/edu4-s.png'
+import edu5s from '../assets/imgs/edumetrica/edu5-s.png'
+import edu6s from '../assets/imgs/edumetrica/edu6-s.png'
+import edu7s from '../assets/imgs/edumetrica/edu7-s.png'
 
 // BLOG
 import blog1 from '../assets/imgs/blog/blog1.png'
@@ -35,6 +52,11 @@ import blog2 from '../assets/imgs/blog/blog2.png'
 import blog3 from '../assets/imgs/blog/blog3.png'
 import blog4 from '../assets/imgs/blog/blog4.png'
 import blog5 from '../assets/imgs/blog/blog5.png'
+import blog1s from '../assets/imgs/blog/blog1-s.png'
+import blog2s from '../assets/imgs/blog/blog2-s.png'
+import blog3s from '../assets/imgs/blog/blog3-s.png'
+import blog4s from '../assets/imgs/blog/blog4-s.png'
+import blog5s from '../assets/imgs/blog/blog5-s.png'
 
 // PORTAFOLIO
 import lrp1 from '../assets/imgs/portafolio/lrp1.png'
@@ -45,6 +67,14 @@ import lrp5 from '../assets/imgs/portafolio/lrp5.png'
 import lrp6 from '../assets/imgs/portafolio/lrp6.png'
 import lrp7 from '../assets/imgs/portafolio/lrp7.png'
 import lrp8 from '../assets/imgs/portafolio/lrp8.png'
+import lrp1s from '../assets/imgs/portafolio/lrp1-s.png'
+import lrp2s from '../assets/imgs/portafolio/lrp2-s.png'
+import lrp3s from '../assets/imgs/portafolio/lrp3-s.png'
+import lrp4s from '../assets/imgs/portafolio/lrp4-s.png'
+import lrp5s from '../assets/imgs/portafolio/lrp5-s.png'
+import lrp6s from '../assets/imgs/portafolio/lrp6-s.png'
+import lrp7s from '../assets/imgs/portafolio/lrp7-s.png'
+import lrp8s from '../assets/imgs/portafolio/lrp8-s.png'
 
 // SHARES
 import share1 from '../assets/imgs/shares/share1.png'
@@ -53,6 +83,12 @@ import share3 from '../assets/imgs/shares/share3.png'
 import share4 from '../assets/imgs/shares/share4.png'
 import share5 from '../assets/imgs/shares/share5.png'
 import share6 from '../assets/imgs/shares/share6.png'
+import share1s from '../assets/imgs/shares/share1-s.png'
+import share2s from '../assets/imgs/shares/share2-s.png'
+import share3s from '../assets/imgs/shares/share3-s.png'
+import share4s from '../assets/imgs/shares/share4-s.png'
+import share5s from '../assets/imgs/shares/share5-s.png'
+import share6s from '../assets/imgs/shares/share6-s.png'
 
 export interface ProjectDetails {
     overviewTitle: string,
@@ -67,6 +103,7 @@ export const projects = [
     {   
         id:100,
         imgs: [lrp1, lrp2, lrp3, lrp4, lrp5, lrp6, lrp7, lrp8],
+        imgsL: [lrp1s, lrp2s, lrp3s, lrp4s, lrp5s, lrp6s, lrp7s, lrp8s],
         title: 'Portafolio',
         logo: portafolio,
         link: 'http://luisrodriguezpodesta.com',
@@ -124,6 +161,7 @@ export const projects = [
     {   
         id:200,
         imgs: [islay1, islay2, islay3, islay4, islay5, islay6, islay7, islay8, islay9, islay10],
+        imgsL: [islay1s, islay2s, islay3s, islay4s, islay5s, islay6s, islay7s, islay8s, islay9s, islay10s],
         title: 'Municipalidad Distrital de Islay',
         logo: islay,
         link: 'https://desarrollo.muniislay.gob.pe',
@@ -179,6 +217,7 @@ export const projects = [
     {
         id:300,
         imgs: [blog1, blog2, blog3, blog4, blog5],
+        imgsL: [blog1s, blog2s, blog3s, blog4s, blog5s],
         title: 'El Teclado de Socrates',
         logo: etc,
         link: '#',
@@ -234,6 +273,7 @@ export const projects = [
     {
         id:400,
         imgs: [edu1, edu2, edu3, edu4, edu5, edu6, edu7],
+        imgsL: [edu1s, edu2s, edu3s, edu4s, edu5s, edu6s, edu7s],
         title: 'Edumetrica',
         logo: edumetrica,
         link: 'https://harmonious-longma-e97533.netlify.app',
@@ -301,6 +341,7 @@ export const projects = [
     {
         id:500,
         imgs: [share1, share2, share3, share4, share5, share6],
+        imgsL: [share1s, share2s, share3s, share4s, share5s, share6s],
         title: 'MyShares',
         logo: myshares,
         link: 'https://myshares-web.com',

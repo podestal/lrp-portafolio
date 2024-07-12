@@ -29,8 +29,8 @@ const Footer = () => {
             <div className="w-full h-full flex flex-col justify-start items-center gap-2">
                 <h3 className="text-3xl">{lan === 'ES' ? 'Enlaces' : 'Links'}</h3>
                 <ul>
-                {navData.map( nav => (
-                    <li className="hover:text-slate-50 text-slate-400 lg:text-xl text-center lg:text-left mt-2"><Link to={nav.route}>{lan == 'ES' ? nav.titleEs : nav.titleEn}</Link></li>
+                {navData.map((nav, idx) => (
+                    <li key={idx} className="hover:text-slate-50 text-slate-400 lg:text-xl text-center lg:text-left mt-2"><Link to={nav.route}>{lan == 'ES' ? nav.titleEs : nav.titleEn}</Link></li>
                 ))}
                 </ul>
             </div>
