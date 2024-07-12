@@ -75,8 +75,8 @@ const Contact = () => {
             initial={{opacity: 0, translateY: -50}}
             whileInView={{opacity: 1, translateY: 0}}
             transition={{duration: 1.2}}
-            className="flex flex-col justify-center items-center gap-6 ">
-            <h2 className="lg:text-7xl text-5xl text-center">{data.title}</h2>
+            className="flex flex-col justify-center items-center gap-6 mx-4 text-center">
+            <h2 className="lg:text-7xl text-5xl">{data.title}</h2>
             <p className="text-xl">{data.subTitle}</p>
         </motion.div>
         {error && 

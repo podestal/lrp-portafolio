@@ -5,6 +5,9 @@ interface Props{
 }
 
 const Project = ({ details }: Props) => {
+
+
+    
   return (
     <div className="w-full h-full flex flex-col justify-center items-center gap-12">
         <div className="lg:w-[70%] w-full max-lg:px-6 flex flex-col justify-center items-center lg:items-start overflow-hidden">

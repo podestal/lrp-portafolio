@@ -19,15 +19,14 @@ const ImgCarousel = ({ imgs, imgsL }: Props) => {
 
   return (
     <div className="flex gap-6 flex-col items-center justify-center my-10 overflow-hidden relative">
-
         {loading && <img loading="lazy" className="w-[560px] h-[280px] lg:w-[800px] lg:h-[500px] object-contain mx-4" src={imgsL[curr]}/>}
         <img loading="lazy" onLoad={() => setLoading(false)} className="w-[560px] h-[280px] lg:w-[800px] lg:h-[500px] object-contain mx-4" src={imgs[curr]}/>
-        <div className="w-full  flex items-center justify-evenly p-4">
+        <div className="w-full flex items-center justify-evenly p-4">
             <button onClick={prev}>
-                <Icon icon={RiArrowLeftCircleLine} size="xl"/>
+                <Icon icon={RiArrowLeftCircleLine} size="lg"/>
             </button>
             <button onClick={next}>
-                <Icon icon={RiArrowRightCircleLine} size="xl"/>
+                <Icon icon={RiArrowRightCircleLine} size="lg"/>
             </button>
         </div>
     </div>

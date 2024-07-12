@@ -78,10 +78,6 @@ const tagsBackend = [
         styles: 'text-slate-50 bg-gradient-to-r from-blue-800 to-sky-400'
     },
     {
-        title: 'Pytest',
-        styles: 'text-slate-50 bg-gradient-to-r from-blue-500 to-green-500'
-    },
-    {
         title: 'Git',
         styles: 'text-slate-50 bg-black'
     },   

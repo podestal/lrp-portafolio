@@ -16,7 +16,7 @@ const About = () => {
               whileInView={{opacity: 1, translateX: 0}}
               transition={{duration: 1.2}}
               className="w-full flex flex-col justify-start items-center gap-6">
-              <h2 className="text-5xl lg:text-8xl text-center py-6">{data.title}</h2>
+              <h2 className="text-5xl lg:text-8xl text-center py-6 max-lg:leading-[3.4rem]">{data.title}</h2>
               {/* <p>Profile Picture ...</p> */}
           </motion.div>
           <motion.div 
