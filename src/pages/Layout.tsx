@@ -1,12 +1,21 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 import NavBar from "../components/navigator/NavBar"
 import Footer from "../components/navigator/Footer"
 import { useEffect } from "react"
 import Lenis from "lenis"
+import useLanguageStore from "../store/store"
 
 const Layout = () => {
 
+  const location = useLocation()
+  const {select} = useLanguageStore()
+
     useEffect(() => {
+
+        if (location.search === '?lan=EN') {
+          select('EN')
+        }
+
         const lenis = new Lenis()
 
         function raf(time: number) {
@@ -19,6 +28,7 @@ const Layout = () => {
 
   return (
     <div className="text-slate-50">
+        <>{console.log('location', location)}</>
         <NavBar />
 
         <Outlet />

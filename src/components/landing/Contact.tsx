@@ -72,7 +72,7 @@ const Contact = () => {
   return (
     <section className="lg:max-w-[1280px]  min-h-screen mx-auto flex flex-col items-center justify-center gap-12 my-10">
         <motion.div 
-            initial={{opacity: 0, translateY: -200}}
+            initial={{opacity: 0, translateY: -50}}
             whileInView={{opacity: 1, translateY: 0}}
             transition={{duration: 1.2}}
             className="flex flex-col justify-center items-center gap-6 ">

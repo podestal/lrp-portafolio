@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import useLanguageStore from "../store/store"
 import { motion } from "framer-motion"
 import { useEffect } from "react"
+import { EN_URL } from "../data/projects"
 
 const Proyectos = () => {
 
@@ -37,7 +38,7 @@ const Proyectos = () => {
                   <h4 className="lg:text-2xl text-xl py-4">{project.title}</h4>
                 </div>
               </Link>
-              <a target="_blank" href={project.link}>
+              <a target="_blank" href={project.title === 'Portafolio' && lan === 'EN' ? `${project.link}/${EN_URL}` : project.link}>
                 <p className=" text-blue-700 py-4 w-full max-lg:text-md hover:text-blue-500">{project.linkTitle}</p>
               </a>
             </div>

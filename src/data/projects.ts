@@ -1,5 +1,7 @@
-// PROJECTS LOGOS
+// PROJECT CONSTANTS
+export const EN_URL = '?lan=EN'
 
+// PROJECTS LOGOS
 import edumetrica from '../assets/imgs/EDUMETRICA VERTICAL_SVG_Mesa de trabajo 1.svg'
 import myshares from '../assets/imgs/myshares-logo.png'
 import etc from '../assets/imgs/etc-logo.png'
@@ -7,7 +9,6 @@ import islay from '../assets/imgs/ISLAY COLOR BLANCO.png'
 import portafolio from '../assets/imgs/logo-no-background.png'
 
 // PROJECT IMGS
-
 // ISLAY
 import islay1 from '../assets/imgs/islay/islay1.png'
 import islay2 from '../assets/imgs/islay/islay2.png'
