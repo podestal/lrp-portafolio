@@ -4,6 +4,8 @@ import useLanguageStore from "../store/store"
 import { motion } from "framer-motion"
 import { useEffect } from "react"
 import { EN_URL } from "../data/projects"
+import { RiGlobalLine, RiGithubFill } from "@remixicon/react"
+import { Icon } from "@tremor/react"
 
 const Proyectos = () => {
 
@@ -38,9 +40,22 @@ const Proyectos = () => {
                   <h4 className="lg:text-2xl text-xl py-4">{project.title}</h4>
                 </div>
               </Link>
-              <a target="_blank" href={project.title === 'Portafolio' && lan === 'EN' ? `${project.link}/${EN_URL}` : project.link}>
-                <p className=" text-blue-700 py-4 w-full max-lg:text-md hover:text-blue-500">{project.linkTitle}</p>
-              </a>
+              <div className="flex flex-col justify-center items-start gap-2 my-4">
+                <div className="flex items-center">
+                  <Icon icon={RiGlobalLine}/>
+                  <a target="_blank" href={project.title === 'Portafolio' && lan === 'EN' ? `${project.link}/${EN_URL}` : project.link}>
+                    <p className=" text-blue-700 w-full max-lg:text-md hover:text-blue-500">{project.linkTitle}</p>
+                  </a>
+                  
+                </div>
+                <div className="flex items-center">
+                  <Icon icon={RiGithubFill}/>
+                  <a target="_blank" href={project.title === 'Portafolio' && lan === 'EN' ? `${project.link}/${EN_URL}` : project.link}>
+                    <p className=" text-blue-700 w-full max-lg:text-md hover:text-blue-500">{project.githubTitle}</p>
+                  </a>
+                  
+                </div>
+              </div>
             </div>
           ))}
         </motion.div>

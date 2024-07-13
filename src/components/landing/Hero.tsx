@@ -33,7 +33,7 @@ const Hero = () => {
             whileInView={{opacity: 1, translateY: 0}}
             transition={{duration: 1.2}}
             className='max-w-[1280px] overflow-hidden max-md:max-w-[600px] flex flex-col justify-center items-center gap-16 mx-auto'>
-            <h2 className='text-center text-6xl lg:text-8xl font-poppins px-4 font-semibold'>{data.title}</h2>
+            <h2 className='text-center text-5xl lg:text-8xl font-poppins px-4 font-bold lg:font-semibold max-lg:leading-[3.4rem]'>{data.title}</h2>
             <p className='w-[80%] lg:w-[60%] text-center text-lg font-montserrat lg:text-2xl px-4 max-lg:py-6'>{data.description}</p>
         </motion.div>
     </motion.section>

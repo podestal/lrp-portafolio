@@ -109,6 +109,8 @@ export const projects = [
         logo: portafolio,
         link: 'http://luisrodriguezpodesta.com',
         linkTitle: 'luisrodriguezpodesta.com',
+        githubTitle: 'Repository',
+        gitHubLink: '',
         details: {
             'ES': {
                 overviewTitle: 'Descripción',
@@ -167,6 +169,8 @@ export const projects = [
         logo: islay,
         link: 'https://desarrollo.muniislay.gob.pe',
         linkTitle: 'desarrollo.muniislay.gob.pe',
+        githubTitle: 'Repository',
+        gitHubLink: '',
         details: {
             'ES': {
                 overviewTitle: 'Descripción',
@@ -223,6 +227,8 @@ export const projects = [
         logo: etc,
         link: '#',
         linkTitle: 'eltecladodesocrates.com',
+        githubTitle: 'Repository',
+        gitHubLink: '',
         details: {
             'ES': {
                 overviewTitle: 'Descripción',
@@ -279,6 +285,8 @@ export const projects = [
         logo: edumetrica,
         link: 'https://harmonious-longma-e97533.netlify.app',
         linkTitle: 'edumetrica.com',
+        githubTitle: 'Repository',
+        gitHubLink: '',
         details: {
             'ES': {
                 overviewTitle: 'Descripción',
@@ -347,6 +355,8 @@ export const projects = [
         logo: myshares,
         link: 'https://myshares-web.com',
         linkTitle: 'myshares-web.com',
+        githubTitle: 'Repository',
+        gitHubLink: '#',
         details: {
             'ES': {
                 overviewTitle: 'Descripción',
