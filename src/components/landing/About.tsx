@@ -18,7 +18,7 @@ const About = () => {
               className="w-full flex flex-col justify-start items-center gap-6">
               <h2 className="text-5xl lg:text-7xl text-center py-6 max-lg:leading-[3.4rem]">{data.title}</h2>
               {/* <p>Profile Picture ...</p> */}
-              <div className="relative">
+              <div className="relative max-lg:my-10">
                 <img src={profilePic} className="lg:h-[300px] lg:w-[280px] h-[240px] w-[200px] object-cover relative z-10" />
                 <div className=" absolute top-10 left-14 lg:top-16 lg:left-20 bg-transparent border-2 border-dashed border-slate-50 lg:h-[300px] lg:w-[280px] h-[240px] w-[200px]"/>
               </div>

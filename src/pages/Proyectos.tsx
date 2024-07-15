@@ -19,9 +19,9 @@ const Proyectos = () => {
     <div className="min-h-screen w-full">
       <div className="max-w-[1280px]  my-24 mx-auto flex flex-col justify-center items-center">
         <motion.h3 
-          initial={{opacity: 0, translateY: 200}}
+          initial={{opacity: 0, translateY: 50}}
           whileInView={{opacity: 1, translateY: 0}}
-          transition={{duration: 1.2}}
+          transition={{duration: 0.8}}
           className="lg:text-7xl text-5xl font-montserrat lg:mb-8 font-bold">{lan === 'ES' ? 'Proyectos' : 'Projects'}</motion.h3>
         <motion.div 
           initial={{opacity: 0, translateY: 200}}
@@ -40,7 +40,7 @@ const Proyectos = () => {
                   <h4 className="lg:text-2xl text-xl py-4">{project.title}</h4>
                 </div>
               </Link>
-              <div className="flex flex-col justify-center items-start gap-2 my-4">
+              <div className="flex flex-col justify-center items-start gap-2 my-4 px-2">
                 <div className="flex items-center">
                   <Icon icon={RiGlobalLine}/>
                   <a target="_blank" href={project.title === 'Portafolio' && lan === 'EN' ? `${project.link}/${EN_URL}` : project.link}>
@@ -50,11 +50,18 @@ const Proyectos = () => {
                 </div>
                 <div className="flex items-center">
                   <Icon icon={RiGithubFill}/>
-                  <a target="_blank" href={project.title === 'Portafolio' && lan === 'EN' ? `${project.link}/${EN_URL}` : project.link}>
-                    <p className=" text-blue-700 w-full max-lg:text-md hover:text-blue-500">{project.githubTitle}</p>
+                  <a target="_blank" href={project.gitHubLinkFrontend}>
+                    <p className=" text-blue-700 w-full max-lg:text-md hover:text-blue-500">{lan === 'EN' ? 'Repository Front-End' : 'Repositorio Front-End'}</p>
                   </a>
-                  
                 </div>
+                {project.gitHubLinkBackend.length > 0 &&
+                  <div className="flex items-center">
+                    <Icon icon={RiGithubFill}/>
+                    <a target="_blank" href={project.gitHubLinkBackend}>
+                      <p className=" text-blue-700 w-full max-lg:text-md hover:text-blue-500">{lan === 'EN' ? 'Repository Back-End' : 'Repositorio Back End'}</p>
+                    </a>
+                  </div>
+                }
               </div>
             </div>
           ))}

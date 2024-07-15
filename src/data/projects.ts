@@ -107,10 +107,10 @@ export const projects = [
         imgsL: [lrp1s, lrp2s, lrp3s, lrp4s, lrp5s, lrp6s, lrp7s, lrp8s],
         title: 'Portafolio',
         logo: portafolio,
-        link: 'http://luisrodriguezpodesta.com',
+        link: 'https://luisrodriguezpodesta.com',
         linkTitle: 'luisrodriguezpodesta.com',
-        githubTitle: 'Repository',
-        gitHubLink: '',
+        gitHubLinkFrontend: 'https://github.com/podestal/lrp-portafolio',
+        gitHubLinkBackend: '',
         details: {
             'ES': {
                 overviewTitle: 'Descripción',
@@ -169,8 +169,8 @@ export const projects = [
         logo: islay,
         link: 'https://desarrollo.muniislay.gob.pe',
         linkTitle: 'desarrollo.muniislay.gob.pe',
-        githubTitle: 'Repository',
-        gitHubLink: '',
+        gitHubLinkFrontend: 'https://github.com/podestal/Desarrollo-Economico-Site',
+        gitHubLinkBackend: '',
         details: {
             'ES': {
                 overviewTitle: 'Descripción',
@@ -225,10 +225,10 @@ export const projects = [
         imgsL: [blog1s, blog2s, blog3s, blog4s, blog5s],
         title: 'El Teclado de Socrates',
         logo: etc,
-        link: '#',
+        link: 'https://eltecladodesocrates.com',
         linkTitle: 'eltecladodesocrates.com',
-        githubTitle: 'Repository',
-        gitHubLink: '',
+        gitHubLinkFrontend: 'https://github.com/podestal/ETC-Web',
+        gitHubLinkBackend: 'https://github.com/podestal/ETC-api',
         details: {
             'ES': {
                 overviewTitle: 'Descripción',
@@ -283,10 +283,10 @@ export const projects = [
         imgsL: [edu1s, edu2s, edu3s, edu4s, edu5s, edu6s, edu7s],
         title: 'Edumetrica',
         logo: edumetrica,
-        link: 'https://harmonious-longma-e97533.netlify.app',
-        linkTitle: 'edumetrica.com',
-        githubTitle: 'Repository',
-        gitHubLink: '',
+        link: 'https://edumetrica.lat',
+        linkTitle: 'edumetrica.lat',
+        gitHubLinkFrontend: 'https://github.com/podestal/my_grades/tree/main/web_app',
+        gitHubLinkBackend: 'https://github.com/podestal/my_grades/tree/main/api',
         details: {
             'ES': {
                 overviewTitle: 'Descripción',
@@ -355,8 +355,8 @@ export const projects = [
         logo: myshares,
         link: 'https://myshares-web.com',
         linkTitle: 'myshares-web.com',
-        githubTitle: 'Repository',
-        gitHubLink: '#',
+        gitHubLinkFrontend: 'https://github.com/podestal/share-app',
+        gitHubLinkBackend: 'https://github.com/podestal/share-api',
         details: {
             'ES': {
                 overviewTitle: 'Descripción',
