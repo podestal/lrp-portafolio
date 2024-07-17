@@ -43,9 +43,9 @@ const NavBar = () => {
                                 ))}
                             </div>
                             <div className="flex gap-4">
-                                <Icon icon={RiGithubFill}/>
-                                <Icon icon={RiLinkedinFill}/>
-                                <Icon icon={RiWhatsappLine}/>
+                                <a href="https://github.com/podestal" target="_blank"><Icon icon={RiGithubFill}/></a>
+                                <a href="https://www.linkedin.com/in/luis-alberto-rodriguez-podesta-b27bb7108/" target="_blank"><Icon icon={RiLinkedinFill}/></a>
+                                <a href="https://wa.me/51973000006" target="_blank"><Icon icon={RiWhatsappLine}/></a>
                             </div>
                     </motion.ul>  
                     }

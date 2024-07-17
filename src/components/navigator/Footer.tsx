@@ -21,9 +21,9 @@ const Footer = () => {
                 <Link to='/'><img className="py-4 cursor-pointer w-[80px]" src={logo} alt="" /></Link>
                 <h3 className="lg:text-xl">{heroDataLan.title}</h3>
                 <div className="flex gap-4">
-                    <a href="#" target="_blank"><Icon icon={RiGithubFill}/></a>
-                    <a href="#" target="_blank"><Icon icon={RiLinkedinFill}/></a>
-                    <a href="#" target="_blank"><Icon icon={RiWhatsappLine}/></a>
+                    <a href="https://github.com/podestal" target="_blank"><Icon icon={RiGithubFill}/></a>
+                    <a href="https://www.linkedin.com/in/luis-alberto-rodriguez-podesta-b27bb7108/" target="_blank"><Icon icon={RiLinkedinFill}/></a>
+                    <a href="https://wa.me/51973000006" target="_blank"><Icon icon={RiWhatsappLine}/></a>
                 </div>
             </div>
             <div className="w-full h-full flex flex-col justify-start items-center gap-2">
