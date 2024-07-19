@@ -6,8 +6,8 @@ interface LangaugeStore {
 }
 
 const useLanguageStore = create<LangaugeStore>(set => ({
-    lan: 'ES',
+    lan: 'EN',
     select: (selectedLan: string) => set(() => ({lan: selectedLan}))
 }))
 
-export default useLanguageStore
+export default useLanguageStore 
